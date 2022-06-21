@@ -1,4 +1,4 @@
-# Program objective: read two digits and print their sum
+#Program objective: Read two digits and print their sum
 
 inputs = input("Enter two digits with a space in between: ")
 

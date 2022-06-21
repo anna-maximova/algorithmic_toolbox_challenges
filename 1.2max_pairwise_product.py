@@ -1,4 +1,4 @@
-#Program objective: find maximum product of two distinct numbers n sequence of non-negative integers.
+#Program objective: Find maximum product of two distinct numbers n sequence of non-negative integers
 
 def max_pairwise_product(size, sequence_string):
     i = 0
