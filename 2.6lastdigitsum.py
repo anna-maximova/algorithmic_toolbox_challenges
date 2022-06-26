@@ -1,4 +1,4 @@
-#Program objective: Given two integers n and m, output F(n) mod(m)
+#Program objective: Given an integer n, find the last digit of the sum F(0) + F(1) + ... + F(n)
 
 def fibnum(n):
     fibonacci = [0] * (n + 2)
@@ -21,7 +21,16 @@ def fibonaccimodmain(n, m):
     remainder = n % pisanolen(m)
     return fibnum(remainder) % m
 
+def lastdigitfibsum(n):
+    sum = 0
+    i = 1
+    while i <= n:
+        sum = sum + fibonaccimodmain(i, 10)
+        i = i + 1
+    return sum % 10
+
 #tests
-print(fibonaccimodmain(2015, 3))
-print(fibonaccimodmain(239, 1000))
-print(fibonaccimodmain(2816213588, 239))
+print(lastdigitfibsum(3))
+print(lastdigitfibsum(100))
+print(lastdigitfibsum(1))
+print(lastdigitfibsum(0))

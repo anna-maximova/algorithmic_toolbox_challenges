@@ -1,7 +1,7 @@
 #Program objective: Given an integer n, find the last digit of the nth Fibonacci number F(n)
 
 def lastFibdigit(n):
-    fibdigit = [0] * (n + 1)
+    fibdigit = [0] * (n + 2)
     fibdigit[0] = 0
     fibdigit[1] = 1
     if n > 1:

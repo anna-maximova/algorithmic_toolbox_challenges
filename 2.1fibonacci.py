@@ -1,7 +1,7 @@
 #Program objective: Given an integer n, find the nth Fibonacci number F(n)
 
 def Fibnum(n):
-    fibonacci = [0] * (n + 1)
+    fibonacci = [0] * (n + 2)
     fibonacci[0] = 0
     fibonacci[1] = 1
     if n > 1:
