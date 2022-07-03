@@ -2,9 +2,6 @@
 #a full tank and gas stations at distances stop(1), stop(2), ...., stop(n), calculate
 #minimum number of refills needed to reach destination (if not possible return -1)
 
-from pickletools import read_int4
-
-
 def carfueling(distance, miles, stops):
     stops.append(distance)
     drivecounter = miles
@@ -28,3 +25,4 @@ print(carfueling(6, 3, [2, 3, 4]))
 print(carfueling(7, 3, [1, 2, 3, 4, 5, 6]))
 print(carfueling(7, 3, [1, 2, 6]))
 print(carfueling(12, 3, [1, 2, 4, 5, 6, 7, 8, 9, 10, 11]))
+print(carfueling(200, 250, [2, 100, 150]))
